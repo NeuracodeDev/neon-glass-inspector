@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom neon glass theme colors
+				neon: {
+					dark: '#080A10',
+					panel: 'rgba(15, 25, 50, 0.6)',
+					panel2: 'rgba(20, 30, 60, 0.7)',
+					blue: '#40C4FF',
+					cyan: '#00F0FF',
+					text: '#B0C0D0'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 5px rgba(0, 240, 255, 0.5), 0 0 10px rgba(64, 196, 255, 0.3)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 15px rgba(0, 240, 255, 0.8), 0 0 20px rgba(64, 196, 255, 0.5)' 
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 3s ease-in-out infinite'
 			}
 		}
 	},
